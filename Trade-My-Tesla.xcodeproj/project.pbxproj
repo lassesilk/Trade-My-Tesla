@@ -10,9 +10,11 @@
 		C43661A4247D1946005C0C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43661A3247D1946005C0C9F /* AppDelegate.swift */; };
 		C43661A6247D1946005C0C9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43661A5247D1946005C0C9F /* SceneDelegate.swift */; };
 		C43661A8247D1946005C0C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43661A7247D1946005C0C9F /* ViewController.swift */; };
-		C43661AB247D1946005C0C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43661A9247D1946005C0C9F /* Main.storyboard */; };
 		C43661AD247D194C005C0C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43661AC247D194C005C0C9F /* Assets.xcassets */; };
 		C43661B0247D194C005C0C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43661AE247D194C005C0C9F /* LaunchScreen.storyboard */; };
+		C43661B8247D2C94005C0C9F /* Cars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C43661B7247D2C94005C0C9F /* Cars.mlmodel */; };
+		C43661BA247D2DB9005C0C9F /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43661B9247D2DB9005C0C9F /* UIView+Layout.swift */; };
+		C43661BC247D5993005C0C9F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43661BB247D5993005C0C9F /* CalculateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		C43661A3247D1946005C0C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C43661A5247D1946005C0C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C43661A7247D1946005C0C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C43661AA247D1946005C0C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C43661AC247D194C005C0C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C43661AF247D194C005C0C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C43661B1247D194C005C0C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43661B7247D2C94005C0C9F /* Cars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Cars.mlmodel; sourceTree = "<group>"; };
+		C43661B9247D2DB9005C0C9F /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		C43661BB247D5993005C0C9F /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				C43661A3247D1946005C0C9F /* AppDelegate.swift */,
 				C43661A5247D1946005C0C9F /* SceneDelegate.swift */,
 				C43661A7247D1946005C0C9F /* ViewController.swift */,
-				C43661A9247D1946005C0C9F /* Main.storyboard */,
+				C43661BB247D5993005C0C9F /* CalculateViewController.swift */,
+				C43661B9247D2DB9005C0C9F /* UIView+Layout.swift */,
 				C43661AC247D194C005C0C9F /* Assets.xcassets */,
 				C43661AE247D194C005C0C9F /* LaunchScreen.storyboard */,
 				C43661B1247D194C005C0C9F /* Info.plist */,
+				C43661B7247D2C94005C0C9F /* Cars.mlmodel */,
 			);
 			path = "Trade-My-Tesla";
 			sourceTree = "<group>";
@@ -127,7 +133,6 @@
 			files = (
 				C43661B0247D194C005C0C9F /* LaunchScreen.storyboard in Resources */,
 				C43661AD247D194C005C0C9F /* Assets.xcassets in Resources */,
-				C43661AB247D1946005C0C9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +144,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43661A8247D1946005C0C9F /* ViewController.swift in Sources */,
+				C43661B8247D2C94005C0C9F /* Cars.mlmodel in Sources */,
 				C43661A4247D1946005C0C9F /* AppDelegate.swift in Sources */,
 				C43661A6247D1946005C0C9F /* SceneDelegate.swift in Sources */,
+				C43661BA247D2DB9005C0C9F /* UIView+Layout.swift in Sources */,
+				C43661BC247D5993005C0C9F /* CalculateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C43661A9247D1946005C0C9F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C43661AA247D1946005C0C9F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C43661AE247D194C005C0C9F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PPL8837AU;
 				INFOPLIST_FILE = "Trade-My-Tesla/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lassesilkoset.Trade-My-Tesla";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PPL8837AU;
 				INFOPLIST_FILE = "Trade-My-Tesla/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lassesilkoset.Trade-My-Tesla";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
